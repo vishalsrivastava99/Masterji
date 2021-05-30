@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search"
+    android:orientation="vertical"
+    android:gravity="">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Tutor"
+        android:textStyle="normal"
+        android:elevation="@dimen/_10sdp"
+        android:textSize="@dimen/_25sdp"
+        android:textColor="@color/lighttextcolor"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search by city"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/_15sdp"/>
+
+    <EditText
+        android:id="@+id/searchbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:background="@drawable/tutee_edittext_shape"
+        android:hint="Enter City"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/textcolor"
+        android:maxLines="1"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/searchtutorbtn"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Search"
+        android:insetRight="@dimen/_4sdp"
+        android:insetLeft="@dimen/_4sdp"
+        app:backgroundTint="@color/studentcolor"
+        android:textColor="@color/white"
+
+        />
+
+
+</LinearLayout>

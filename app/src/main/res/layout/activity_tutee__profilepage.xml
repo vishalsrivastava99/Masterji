@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tutee_Profilepage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_180sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/profile_bg"
+                    android:alpha="0.4"
+                    android:scaleType="fitXY" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="center"
+                    android:id="@+id/tutee_profileimage"
+                    app:civ_border_color="@color/studentcolor"
+                    android:src="@drawable/signin"
+                    app:civ_border_width="@dimen/_1sdp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tutee_profilename"
+                    android:text="Vishal"
+                    android:textColor="@color/textcolor"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_20sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_140sdp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactinfo"
+                android:text="Personal Details"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/tuteename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tutee_edittext_shape"
+                android:hint="Full name"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email id"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/tuteeemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tutee_edittext_shape"
+                android:drawableEnd="@drawable/ic_email"
+                android:hint="My Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No."
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+
+
+
+            <EditText
+                android:id="@+id/tuteemobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tutee_edittext_shape"
+                android:hint="Mobile Number"
+                android:drawableEnd="@drawable/ic_mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/academicinfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Acdemic Details"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standard"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/tuteestandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tutee_edittext_shape"
+                android:hint="Standard"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/tuteecollege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tutee_edittext_shape"
+                android:hint="College Name"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor"
+
+                />
+
+            <TextView
+                android:id="@+id/addressdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Address Details"
+                android:textColor="@color/textcolor"
+                android:layout_gravity="center"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/tuteeaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/tutee_edittext_shape"
+                android:hint="Address"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor"
+
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/tutee_updatebtn"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="Update"
+                app:backgroundTint="@color/studentcolor"
+                android:textColor="@color/white"
+
+                />
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

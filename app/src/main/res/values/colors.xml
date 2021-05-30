@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="logocolor">#C6468D</color>
+    <color name="textcolor">#201F1F</color>
+    <color name="lighttextcolor">#535151</color>
+    <color name="bar_color">#EC7DBA</color>
+    <color name="toolbar_color">#E465AC</color>
+    <color name="background">#B9D7EF</color>
+    <color name="blue">#3852E4</color>
+    <color name="democolor">#B0D1D5</color>
+<!--    <color name="studentcolor">#38A186</color>-->
+<!--    <color name="studentcolorlight">#74EFD0</color>-->
+<!--    <color name="optionbgcolor">#8FDD92</color>-->
+    <color name="homecolor">#FFAB00</color>
+    <color name="skyblue">#058D9C</color>
+    <color name="lightgray">#919495</color>
+    <color name="orange">#E66035</color>
+    <color name="yellow">#79004D</color>
+    <color name="lightgreen">#3CE336</color>
+    <color name="lightpink">#EA2FB5</color>
+
+    <color name="studentcolor">#12A0F8</color>
+    <color name="studentcolorlight">#4DADE8</color>
+    <color name="optionbgcolor">#1A86CA</color>
+</resources>

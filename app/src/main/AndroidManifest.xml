@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Masterji">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Student">
+        <activity android:name=".View_Pdf"></activity>
+        <activity android:name=".Tutee_Notes_View" />
+        <activity android:name=".Tutee_Notes" />
+        <activity android:name=".Suggestion" />
+        <activity android:name=".Search" />
+        <activity android:name=".FAQs" />
+        <activity android:name=".Tutee_Post_View" />
+        <activity
+            android:name=".Tutee_Post"
+            android:theme="@style/Theme.Tutee" />
+        <activity
+            android:name=".Tutee_Profilepage"
+            android:theme="@style/Theme.Tutee" />
+        <activity
+            android:name=".Tutee_HomePage"
+            android:theme="@style/Theme.Tutee" />
+        <activity
+            android:name=".Tutee_Signup"
+            android:theme="@style/Theme.Tutee" />
+        <activity
+            android:name=".Tutee_Login"
+            android:theme="@style/Theme.Tutee" />
+        <activity android:name=".Landing_Page" />
+        <activity android:name=".MyStudentsList" />
+        <activity android:name=".TutorHomePage" />
+        <activity android:name=".TutorProfilePage" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        </activity>
+        <activity android:name=".Student_signup" />
+        <activity android:name=".Student_Login" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Student.NoActionBar" />
+    </application>
+
+</manifest>

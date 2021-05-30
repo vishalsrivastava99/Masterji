@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TutorProfilePage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" >
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/coverphoto"
+                    android:alpha="0.6"
+                    android:scaleType="fitXY" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_gravity="center"
+                    android:id="@+id/profileimage"
+                    app:civ_border_color="@color/logocolor"
+                    android:src="@drawable/signin"
+                    app:civ_border_width="@dimen/_1sdp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/teachername"
+                    android:text="Vishal"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/normal"
+                    android:textSize="@dimen/_22sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_170sdp"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/contactinfo"
+                android:text="Contact Details"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+
+            <EditText
+                android:id="@+id/teacheremail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edittext_shape"
+                android:drawableEnd="@drawable/ic_email"
+                android:hint="My Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="30"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor"
+
+                />
+
+            <EditText
+                android:id="@+id/teachermobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edittext_shape"
+                android:hint="Mobile Number"
+                android:drawableEnd="@drawable/ic_mobile"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/qualificationinfo"
+                android:text="Qualification"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/teacherdegree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edittext_shape"
+                android:hint="Degree"
+                android:inputType="text|textMultiLine"
+                android:maxLength="100"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/subjectinfo"
+                android:text="Available for Subjects"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:id="@+id/teachersubjects"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edittext_shape"
+                android:hint="Maths/Science/Commerce"
+                android:inputType="text|textMultiLine"
+                android:maxLength="100"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/experienceinfo"
+                android:text="Experience"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+
+
+
+            <EditText
+                android:id="@+id/teacherexperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/edittext_shape"
+                android:hint="Experience"
+                android:inputType="text|textMultiLine"
+                android:maxLength="100"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/addressinfo"
+                android:text="Address Details"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teachercity"
+                android:inputType="text|textMultiLine"
+                android:textColor="@color/textcolor"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="City"
+                android:padding="@dimen/_5sdp"
+                android:maxLength="25"
+                android:background="@drawable/edittext_shape" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptioninfo"
+                android:text="Description"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_10sdp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/teacheraboutme"
+                android:inputType="text|textMultiLine"
+                android:textColor="@color/textcolor"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:hint="About me"
+                android:padding="@dimen/_5sdp"
+                android:maxLength="250"
+                android:background="@drawable/edittext_shape"
+                android:drawableEnd="@drawable/ic_dropdown" />
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/updatebtn"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="Update"
+                app:backgroundTint="@color/logocolor"
+                android:textColor="@color/white"
+
+                />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+</LinearLayout>

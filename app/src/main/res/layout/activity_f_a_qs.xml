@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FAQs"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="FAQs"
+        android:id="@+id/faqs"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:gravity="center"
+        android:textColor="@color/textcolor"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Q1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Q1:"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:id="@+id/q1"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/faqs"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toRightOf="@id/Q1"
+            android:text="How to Find Tutor Near me?"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/A1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="A1:"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/faqs"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toRightOf="@id/Q1"
+            android:text="Go on the Search option and select city or you can post request for Tutor"
+            android:textColor="@color/lighttextcolor"
+            android:textSize="@dimen/_13sdp" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/lightgray" />
+        <TextView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/Q2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Q2:"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:id="@+id/q2"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/faqs"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toRightOf="@id/Q1"
+            android:text="How to write Query/Suggestion?"
+            android:textColor="@color/textcolor"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/A2"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="A2:"
+            android:textColor="@color/textcolor"
+            android:textSize="@dimen/_15sdp"
+            />
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/faqs"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_toRightOf="@id/Q1"
+            android:text="Query option on the home page simply click on it and write query/suggestion"
+            android:textColor="@color/lighttextcolor"
+            android:textSize="@dimen/_13sdp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
